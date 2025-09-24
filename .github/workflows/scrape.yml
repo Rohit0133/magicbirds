@@ -29,13 +29,13 @@ jobs:
         python prop.py
 
     - name: Upload CSV file as artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: magicbricks_projects
         path: magicbricks_projects.csv
 
     - name: Upload JSON file as artifact
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: magicbricks_projects_json
         path: magicbricks_projects.json
