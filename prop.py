@@ -16,8 +16,11 @@ class MagicBricksScraper:
         os.makedirs(self.output_dir, exist_ok=True)
 
         # Save files inside the output directory
+        self.output_dir = "output"
+        os.makedirs(self.output_dir, exist_ok=True)  # Create folder if it doesn't exist
         self.csv_filename = os.path.join(self.output_dir, 'magicbricks_projects.csv')
         self.json_filename = os.path.join(self.output_dir, 'magicbricks_projects.json')
+
 
         self.scraped_count = 0
         self.failed_count = 0
