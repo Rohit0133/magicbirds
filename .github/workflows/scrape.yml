@@ -32,10 +32,10 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: magicbricks_projects
-        path: magicbricks_projects.csv
+        path: output/magicbricks_projects.csv
 
     - name: Upload JSON file as artifact
       uses: actions/upload-artifact@v4
       with:
         name: magicbricks_projects_json
-        path: magicbricks_projects.json
+        path: output/magicbricks_projects.json
